@@ -1,0 +1,21 @@
+
+/*    niche '*' likha hai matlab pure main.jsx file me jo data import hokar ayaga us sab pe lagega */
+*{   
+margin:0;
+padding:0;
+ box-sizing:border-box;   /*....doubt wht is its use? */
+font-family: sans-serif;
+}
+a{ text-decoration: none;
+    color: #5a5a5a;
+
+}
+img{
+    cursor: pointer;  /* arrow wala cursor hath wala me change ho jayega*/
+
+}
+.flex-div{
+  
+    display: flex;
+    align-items: center;
+}

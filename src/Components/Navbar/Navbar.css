@@ -1,0 +1,93 @@
+nav{
+    padding: 10px 2%;  /* 10px for the top and bottom padding.
+            2% for the left and right padding. */
+justify-content: space-between;
+ box-shadow: 0 0 10px rgba(0,0,0,0.2);
+background: #fff; /* equivalent to background-color: #fff;*/
+position:sticky;/*will "stick" to a specified position  when you scroll.*/
+top:0;          /*stick to the top of its containing element when you scroll down.*/
+z-index:10;          /*Elements with a higher z-index will appear in front of elements with a lower z-index.*/
+
+
+}
+.nav-left .menu-icon{
+    width: 22px;
+    margin-right: 25px;
+}
+.nav-left .logo{
+    width :130px;
+    padding-left: 5%;
+}
+.nav-middle .search-box{
+    border: 1px solid #ccc;  
+    margin-right: 15px;
+    padding: 8px 12px ;
+    border-radius: 25px;   
+}
+.nav-middle .search-box input{
+    width: 400px;
+    border:0;     /*removes  border of  the element and border properties (width, style, and color) */
+    outline:0;
+    background: transparent;
+}
+.nav-middle .search-box img{
+    width: 15px;
+}
+.nav-right img{
+    width: 25px;
+    margin-right: 25px;
+}
+.nav-right .user-icon{
+    width: 35px;
+    border-radius: 50%;
+}
+
+@media(max-width:900px){
+    
+   /* for makinng .search-img1 adjustable kyuki achha nahi lag raha tha */
+     .nav-middle .search-box input{
+        width: 175px;}
+
+    /* for nav right related  */
+    .nav-right img{
+        display: none;
+    }
+    .nav-right .upload_ico{
+        display: block;
+        padding-right: 5%;
+        width: 30px;
+    }
+    .nav-right .user-icon{
+        display: block;
+        width: 30px;
+    }
+    /* for logo */
+    .logo{
+        width: 40px;
+        height:40px;
+       
+    }
+    
+   
+}
+
+ /* for overlapping the url search image when width less than 900px */
+    
+@media(max-width:549px){
+     .search-box input{
+        display: none;
+
+     }
+     .search-img{
+        display: none;
+     } 
+     .nav-right .upload_ico{
+        display: none;
+    }
+    }
+@media(min-width:550px){
+
+.search-img2{
+        display: none;
+     } 
+    }  
