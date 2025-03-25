@@ -17,15 +17,15 @@ const Feed = ({ category }) => {
         const videoList_url = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=US&videoCategoryId=${category}&key=${API_KEY}`
         await fetch(videoList_url).then(response => response.json()).then(data => setData(data.items))
     }
-    useEffect(() => {
+    useEffect(() => { 
         fetchData();
     }, [category])
 
-
+  
     return (
-        <div className='feed'>
+        <div className='feed'>   
             {data.map((item, index) => {
-                return (
+                return (   
                     
                     <Link to={`video/${item.snippet.categoryId}/${item.id}`} className='card'>  {/*lekin yaha items tha item nahi */}
                         <img src={item.snippet.thumbnails.medium.url} alt="" />
@@ -33,9 +33,10 @@ const Feed = ({ category }) => {
                         <h3>{item.snippet.channelTitle}</h3>
                         <p>{ value_converter(item.statistics.viewCount)} views &bull;{moment(item.snippet.publishedAt).fromNow()}</p> {/*item.statistics.viewCount will show complete number like 15485418. so for  getting in 1m or 1k i have add value_converter in data.js and import kar liya */}
                                          {/*for uploaded time we had added only item.snippet.publishedAt but it was giving uploaded time in day:hrs:minute ,therefore getting in form like 2 days ago ,23 hra ago we have added moment ans fromNow(),moment function is already in package,json ans fromNow is predefined functiion }*/}
+                                         {/* moment is a JavaScript library that simplifies date and time manipulation,fromNow() is a function provided by the moment library that converts a date into a relative time format.  */}
                     </Link>
                 )
-            })}
+            })}   
             {/* 
               <Link to={`video/20/4521`} className='card'>
               <img src={thumbnail1} alt="" />  

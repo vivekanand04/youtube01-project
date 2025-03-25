@@ -5,7 +5,7 @@ import Home from './Pages/Home/Home'
 import Video from './Pages/Video/Video'
 const App = () => {
   const [sidebar,setSidebar]=useState(true);
-   const[sidebar2,setSidebar2]=useState(false);
+   const[sidebar2,setSidebar2]=useState(false); 
   // setSidebar2={setSidebar2}
   return (
     <div>
