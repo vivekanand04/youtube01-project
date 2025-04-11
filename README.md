@@ -4,7 +4,8 @@ This is a **frontend-only clone of YouTube’s User Interface**, built with a mo
 
 > 🚧 **Project Status:** UI Completed (Frontend Only)  
 > 🎯 **Goal:** To build a **full-scale video-sharing platform** with upload, playback, authentication, and more in the future.
-> Deployment :https://youtube01-project.vercel.app/
+>
+> 🎯 Deployment :https://youtube01-project.vercel.app/
 ---
 
 ## 🚀 Features
